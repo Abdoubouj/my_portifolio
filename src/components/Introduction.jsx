@@ -1,11 +1,12 @@
 import React from 'react'
 import {FaDownload ,FaReact , FaHtml5 , FaCss3Alt ,FaLaravel} from "react-icons/fa"
 import {BiLogoJavascript} from "react-icons/bi"
+import img from "../assets/IMG_1417.png";
 import {BsGit} from "react-icons/bs"
 import {AiFillFacebook,AiFillGithub,AiFillInstagram,AiFillLinkedin} from "react-icons/ai"
 const Introduction = () => {
   return (
-    <section className="flex items-center justify-center" id='introduction'>
+    <section className="flex mt-14 items-center justify-center" id='introduction'>
         <div className="container mx-auto">
             <div className="flex flex-col-reverse xl:flex-row xl:items-start justify-between xl:gap-2 items-center gap-[100px] ">
             <div className="content_left dark:text-slate-300 text-textColorDark flex flex-col gap-4" data-aos="fade-right" data-aos-duration="1500">
@@ -45,8 +46,8 @@ const Introduction = () => {
                 <li className='origin-[160px] md:origin-[230px] lng_item text-orange-500' style={{'--i':5}}>
                     <BsGit/>
                 </li>
-                <div className="md:w-[350px] md:h-[350px] w-[250px] h-[250px] relative rounded-full truncate bg-primaryColor shadow-2xl shadow-primaryColor">
-                    <img src="myImage.png" className='absolute bottom-0 left-[30px] md:w-[280px] md:h-[350px] w-[200px] h-[250px] object-cover' alt="#" />
+                <div className="md:w-[350px] md:h-[350px] w-[250px] h-[250px] relative rounded-full truncate border-[1px] border-primaryColor bg-slate-50 shadow-2xl shadow-primaryColor">
+                    <img src={img} className='absolute bottom-0  md:w-[400px] md:h-[400px] w-[250px] h-[250px] object-cover' alt="#" />
                 </div>
             </div>
             </div>

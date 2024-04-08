@@ -1,20 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Lato',sans-serif;
 }
 section{
   padding: 2rem 3rem;
   min-height: 100vh;
 }
+.skills_section .item{
+  background-image: repeating-linear-gradient(90deg, rgba(219, 219, 219,0.2) 0px, rgba(219, 219, 219,0.2) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(180deg, rgba(219, 219, 219,0.2) 0px, rgba(219, 219, 219,0.2) 1px,transparent 1px, transparent 21px),linear-gradient(180deg, rgb(255,255,255),rgb(255,255,255));
+}
+.skills_section .item:hover  , .dark .skills_section .item:hover{
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0px, rgba(255, 255, 255, 0.2) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0px, rgba(255, 255, 255, 0.2) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, #9AC27B,#9AC27B);
+}
+.dark .skills_section .item{
+  background-image: repeating-linear-gradient(0deg, rgba(118, 118, 118, 0.2) 0px, rgba(118, 118, 118, 0.2) 1px,transparent 1px, transparent 21px),repeating-linear-gradient(90deg, rgba(118, 118, 118, 0.2) 0px, rgba(118, 118, 118, 0.2) 1px,transparent 1px, transparent 21px),linear-gradient(90deg, rgb(2, 6, 23),rgb(2,6,23));
+}
 .container{
   padding: 0.5rem 2rem;
   max-width: 1200px !important;
 }
+.projects_items .item{
+  background-image: repeating-linear-gradient(135deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, hsl(183,0%,100%),hsl(183,0%,100%)) !important;
+}
+.dark .projects_items .item{
+  background-image: repeating-linear-gradient(135deg, hsla(0, 0%, 87%, 0.09) 0px, hsla(0, 0%, 87%, 0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(0, 0%, 87%, 0.09) 0px, hsla(0, 0%, 87%, 0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, rgb(2,6,23),rgb(2,6,23)) !important;
+}
+.text-logo{
+  font-family: 'Kaushan Script';
+}
 html{
   scroll-behavior: smooth;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(calc(360deg/6 * var(--i))) scale(1);
+  }
+  100% {
+    transform:rotate(calc(360deg/6 * var(--i))) scale(1.1);
+  }
 }
 .content_right li{
   position: absolute;
@@ -24,15 +52,13 @@ html{
   transform: rotate(calc(360deg/6 * var(--i)));
   /* transform-origin: 230px; */
   font-size: 25px;
+  animation: animate 1s infinite alternate;
 }
 .section_services{
   background-image: url(wave.svg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
-}
-.section_projects .projects_item .item{
-  flex-direction: column !important;
 }
 
 @media screen and (max-width:500px) {
@@ -41,6 +67,12 @@ html{
   }
 }
 
+header.active{
+  background: #9AC27B;
+}
+header.active a , header.active .text-logo ,header.active .modes .dark-mode{
+  color: #fff !important;
+}
 
 
 

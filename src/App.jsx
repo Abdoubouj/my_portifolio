@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Introduction from './components/Introduction';
 import { useEffect } from 'react';
 import Skills from './components/Skills';
-import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -17,13 +16,12 @@ function App() {
     Aos.init();
    },[])
   return (
-    <div className='container-2xl bg-slate-50 dark:bg-slate-800'>
+    <div className='container-3xl overflow-hidden bg-white dark:bg-slate-950'>
       <Header handleChangeMode={handleChangeMode}/>
-      <main>
+      <main className='w-full'>
       <Introduction/>
       <Education/>
       <Skills/>
-      <Services/>
       <Projects/>
       <Contact/>
       </main>
