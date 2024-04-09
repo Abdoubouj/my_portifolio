@@ -35,11 +35,11 @@ const Header = ({handleChangeMode}) => {
            <MdOutlineClose/>
            </button>
            <ul className="navigation_menu_list mt-[50px] md:mt-0 flex md:flex-row flex-col gap-1">
-            <a className="capitalize border-b-[1px] border-slate-500 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#introduction">home</a>
-            <a className="capitalize border-b-[1px] border-slate-500 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#eduction">Education</a>
-            <a className="capitalize border-b-[1px] border-slate-500 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#skills">skills</a>
-            <a className="capitalize border-b-[1px] border-slate-500 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#projects">projects</a>
-            <a className="capitalize border-b-[1px] border-slate-500 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#contact">contact us</a>
+            <a className="capitalize border-b-[1px] border-slate-200 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#introduction">home</a>
+            <a className="capitalize border-b-[1px] border-slate-200 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#eduction">Education</a>
+            <a className="capitalize border-b-[1px] border-slate-200 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#skills">skills</a>
+            <a className="capitalize border-b-[1px] border-slate-200 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#projects">projects</a>
+            <a className="capitalize border-b-[1px] border-slate-200 md:border-0 px-3 py-4 hover:font-semibold md:hover:text-primaryColor text-sm lg:text-[16px] dark:text-slate-300 text-white md:text-textColorDark font-medium tracking-wide" href="#contact">contact us</a>
            </ul>
           </div>
           {/* ========== Navigation Menu } ======== */}
@@ -55,7 +55,7 @@ const Header = ({handleChangeMode}) => {
              </div>
            </div>
           </div>
-            <div onClick={()=>setNavShow(true)} className="text-textColorDark cursor-pointer md:hidden text-2xl">
+            <div onClick={()=>setNavShow(true)} className="text-textColorDark dark:text-white cursor-pointer md:hidden text-2xl">
                <AiOutlineMenu/>
             </div>
           </div>

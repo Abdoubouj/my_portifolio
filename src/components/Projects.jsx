@@ -10,7 +10,7 @@ const Projects = () => {
         </div>
         <div className="projects_items flex mt-14 gap-10 items-center justify-center md:justify-start">
           {projects.map((project)=>(
-            <div key={project.id} data-aos="fade-left" data-aos-duration="500" className="item border-[1px] border-slate-200 dark:border-slate-700 shadow-md rounded-lg flex flex-col gap-2 w-[330px]">
+            <div key={project.id} data-aos="fade-left" data-aos-duration="500" className="item border-[1px] border-slate-100 dark:border-slate-700 shadow-sm rounded-lg flex flex-col gap-2 w-[330px]">
                 <div className="item_image w-full h-full object-cover border-b-[1px] border-slate-200">
                     <img src={project?.image} className='rounded-t-lg' alt="#" />
                 </div>

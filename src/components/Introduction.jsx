@@ -3,6 +3,7 @@ import {FaDownload ,FaReact , FaHtml5 , FaCss3Alt ,FaLaravel} from "react-icons/
 import {BiLogoJavascript} from "react-icons/bi"
 import img from "../assets/IMG_1417.png";
 import {BsGit} from "react-icons/bs"
+import cv from "../assets/CV.pdf";
 import {AiFillFacebook,AiFillGithub,AiFillInstagram,AiFillLinkedin} from "react-icons/ai"
 const Introduction = () => {
   return (
@@ -14,16 +15,16 @@ const Introduction = () => {
                 <h2 className='md:text-[50px] text-[30px] font-semibold'>Abderrahim <span className='text-primaryColor'>Boujedar</span></h2>
                 <h5 className='font-[300] text-xl'>And I’m a full-stack Developper</h5>
                 <p className='font-[300] text-[14px] max-w-[500px]'>I'm a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. My expertise lies in creating dynamic and responsive web applications that deliver seamless user experiences. With a keen eye for design and a deep understanding of server-side programming, I thrive in the ever-evolving world of web development.</p>
-                <a href='#' className='bg-primaryColor  mt-2 w-[200px] text-slate-50 font-[400] tracking-wide px-6 py-3 rounded-md shadow-sm shadow-primaryColor flex items-center justify-center gap-3'>
+                <a href={cv} download className='bg-primaryColor  mt-2 w-[200px] text-slate-50 font-[400] tracking-wide px-6 py-3 rounded-md shadow-sm shadow-primaryColor flex items-center justify-center gap-3'>
                     <span><FaDownload/></span>
                     <span>Download CV</span>
                 </a>
                 <div className="social_media">
                     <div className="flex py-3 gap-5 items-center justify-start text-primaryColor text-2xl">
-                    <div className="hover:text-textColorDark cursor-pointer"><AiFillFacebook/></div>
-                    <div className="hover:text-textColorDark cursor-pointer"><AiFillGithub/></div>
-                    <div className="hover:text-textColorDark cursor-pointer"><AiFillInstagram/></div>
-                    <div className="hover:text-textColorDark cursor-pointer"><AiFillLinkedin/></div>
+                    <a href='https://web.facebook.com/profile.php?id=100012287583739' className="hover:text-textColorDark cursor-pointer"><AiFillFacebook/></a>
+                    <a href='https://github.com/Abdoubouj' className="hover:text-textColorDark cursor-pointer"><AiFillGithub/></a>
+                    <a href='https://www.instagram.com/abderrahim.x/?hl=en' className="hover:text-textColorDark cursor-pointer"><AiFillInstagram/></a>
+                    <a href='https://www.linkedin.com/in/abderrahim-boujedar-06b684284/' className="hover:text-textColorDark cursor-pointer"><AiFillLinkedin/></a>
                     </div>
                 </div>
             </div>
