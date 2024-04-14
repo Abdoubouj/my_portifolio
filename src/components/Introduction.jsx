@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaDownload ,FaReact , FaHtml5 , FaCss3Alt ,FaLaravel} from "react-icons/fa"
 import {BiLogoJavascript} from "react-icons/bi"
-import img from "../assets/IMG_1417.png";
+import img from "../assets/IMG_1417.webp";
 import {BsGit} from "react-icons/bs"
 import cv from "../assets/CV.pdf";
 import {AiFillFacebook,AiFillGithub,AiFillInstagram,AiFillLinkedin} from "react-icons/ai"
@@ -48,7 +48,7 @@ const Introduction = () => {
                     <BsGit/>
                 </li>
                 <div className="md:w-[350px] md:h-[350px] w-[250px] h-[250px] relative rounded-full truncate border-[1px] border-primaryColor bg-slate-50 shadow-2xl shadow-primaryColor">
-                    {/* <img src={img} className='absolute bottom-0  md:w-[400px] md:h-[400px] w-[250px] h-[250px] object-cover' alt="#" /> */}
+                    <img src={img} className='absolute bottom-0  md:w-[400px] md:h-[400px] w-[250px] h-[250px] object-cover' alt="#" />
                 </div>
             </div>
             </div>
